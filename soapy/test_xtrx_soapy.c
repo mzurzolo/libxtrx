@@ -67,7 +67,7 @@ int main(void)
 
     //setup a stream (complex floats)
     SoapySDRStream *rxStream;
-    if (SoapySDRDevice_setupStream(sdr, &rxStream, SOAPY_SDR_RX, SOAPY_SDR_CF32, NULL, 0, NULL) != 0)
+    if (SoapySDRDevice_setupStream(sdr, &rxStream, SOAPY_SDR_RX, SOAPY_SDR_CF32, NULL, 0) != 0)
     {
         printf("setupStream fail: %s\n", SoapySDRDevice_lastError());
     }
