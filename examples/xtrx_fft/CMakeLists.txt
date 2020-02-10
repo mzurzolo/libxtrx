@@ -12,7 +12,7 @@ message(${CMAKE_MODULE_PATH})
 # Find the QtWidgets library
 find_package(Qt5Widgets CONFIG REQUIRED)
 find_package(Qt5PrintSupport CONFIG REQUIRED)
-find_package(QCustomPlot CONFIG REQUIRED)
+find_package(QCustomPlot REQUIRED)
 find_package(LibXTRX REQUIRED)
 
 # Populate a CMake variable with the sources
